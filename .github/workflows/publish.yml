@@ -121,7 +121,7 @@ jobs:
           provenance: false
           tags: ghcr.io/${{ github.repository_owner }}/zephyr:${{ matrix.toolchain.nick }}-${{ matrix.sdk }}SDK
           build-args: |
-            BASE_IMAGE=ghcr.io/embeddedcontainers/zephyr:base-${{ matrix.sdk }}SDK
+            BASE_IMAGE=ghcr.io/dennis13huang/zephyr:base-${{ matrix.sdk }}SDK
             ZEPHYR_SDK_TOOLCHAINS=-t ${{ matrix.toolchain.arch }}
             ZEPHYR_SDK_VERSION=${{ matrix.sdk }}
 
@@ -163,5 +163,5 @@ jobs:
           provenance: false
           tags: ghcr.io/${{ github.repository_owner }}/zephyr:posix-${{ matrix.sdk }}SDK
           build-args: |
-            BASE_IMAGE=ghcr.io/embeddedcontainers/zephyr:base-${{ matrix.sdk }}SDK
+            BASE_IMAGE=ghcr.io/dennis13huang/zephyr:base-${{ matrix.sdk }}SDK
             ZEPHYR_SDK_VERSION=${{ matrix.sdk }}
