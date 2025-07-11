@@ -16,7 +16,7 @@ jobs:
 
     strategy:
       matrix:
-        sdk: [0.17.2]
+        sdk: [0.17.1]
 
     steps:
       - name: Checkout repository
@@ -134,7 +134,7 @@ jobs:
 
     strategy:
       matrix:
-        sdk: [0.17.2]
+        sdk: [0.17.1]
 
     steps:
       - name: Checkout repository
